@@ -1,0 +1,85 @@
+.new-book {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 40px;
+  text-shadow: inherit;
+  color: var(--main-green);
+  top: 10px;
+  right: 10px;
+  height: 65px;
+  width: 65px;
+  background-color: var(--black-shade);
+  border: none;
+}
+
+.new-book i {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.new-book:hover i {
+  transform: scale(1.05);
+  text-shadow: 0 0 1px var(--main-green);
+}
+
+.form-overlay {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  width: 80%;
+  color: white;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+}
+
+.form-label {
+  font-size: 1.4em;
+}
+
+.form-input {
+  display: block;
+  font-size: 24px;
+  width: 90%;
+  height: 40px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  transition: all 0.30s ease-in-out;
+}
+
+.form-input:focus {
+  box-shadow: var(--green-box-shadow);
+  border: 2px solid var(--main-green);
+}
+
+.close-form {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: red;
+  text-shadow: none;
+  cursor: pointer;
+}

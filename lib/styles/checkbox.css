@@ -1,0 +1,49 @@
+.is-read-check {
+ display: block;
+ position: relative;
+ padding-left: 55px;
+ cursor: pointer;
+}
+
+.is-read-check input {
+ position: absolute;
+ opacity: 0;
+ height: 0;
+ width: 0;
+ cursor: pointer;
+}
+
+.checkbox {
+ position: absolute;
+ top: 14px;
+ left: 0;
+ height: 30px;
+ width: 30px;
+ border: 2px solid darkgray;
+ border-radius: 5px;
+}
+
+.is-read-check input:checked ~ .checkbox {
+  box-shadow: var(--green-box-shadow);
+  border: 2px solid var(--main-green);
+}
+
+.checkbox:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+.is-read-check input:checked ~ .checkbox:after {
+ display: block;
+}
+
+.is-read-check .checkbox:after {
+ left: 11px;
+ top: 4px;
+ width: 5px;
+ height: 17px;
+ border: solid white;
+ border-width: 0 4px 4px 0;
+ transform: rotate(45deg);
+}

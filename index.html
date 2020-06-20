@@ -17,7 +17,31 @@
     </button>
     <div id="form-overlay" class="form-overlay">
       <form class="form">
-        <span id="close-form" class="close-form">x</span>
+        <span id="close-form" class="close-form"><i class="fas fa-times"></i></span>
+        <div class="form-elements">
+          <label for="book-title-input" class="form-label">Title</label>
+          <input id="book-title-input" class="form-input" name="book-title-input"
+          type="text">
+          </input>
+        </div>
+        <div class="form-elements">
+          <label for="book-author-input" class="form-label">Author</label>
+          <input id="book-author-input" class="form-input" name="book-author-input">
+          </input>
+        </div>
+        <div class="form-elements">
+          <label for="book-genre-input" class="form-label">Genre</label>
+          <input id="book-genre-input" class="form-input" name="book-genre-input"
+          type="text">
+          </input>
+        </div>
+        <div class="form-elements">
+          <label for="is-read-check" class="form-label is-read-check">
+            <input type="checkbox" id="is-read-check"></input>
+            <span class="checkbox"></span>
+            Read
+          </label>
+        </div>
       </form>
     </div>
     <main class="bookshelf">
