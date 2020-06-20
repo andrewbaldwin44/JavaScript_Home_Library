@@ -28,7 +28,8 @@
 
 .form-overlay {
   position: fixed;
-  display: none;
+  display: flex;
+  transform: scale(0);
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -39,11 +40,32 @@
 
 .form {
   display: flex;
+  transform: scale(0);
   flex-direction: column;
   justify-content: space-around;
   height: 80%;
   width: 80%;
   color: white;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes form-in {
+  90% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes form-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
 
 .form-elements {
