@@ -7,6 +7,7 @@
   --main-green: #00C851;
   --green-box-shadow: 0 0 5px 3px var(--main-green);
   --red-box-shadow: 0 0 5px 3px red;
+  --blue-box-shadow: 0 0 5px 3px dodgerblue;
 }
 
 body {

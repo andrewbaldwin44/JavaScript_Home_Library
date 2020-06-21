@@ -1,4 +1,4 @@
-.new-book, .book-status-button {
+.new-book, .book-status-button, .submit-button {
   font-family: inherit;
   font-weight: inherit;
 }
@@ -56,7 +56,7 @@
   transform: scale(0);
   flex-direction: column;
   justify-content: space-around;
-  height: 80%;
+  height: 85%;
   width: 80%;
   color: white;
 }
@@ -107,6 +107,10 @@
   font-size: 1.4em;
 }
 
+.form-input, .submit-button {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 .form-input {
   display: block;
   font-size: 24px;
@@ -116,12 +120,25 @@
   border-radius: 3px;
   margin-top: 10px;
   padding: 5px 10px;
-  transition: all 0.30s ease-in-out;
+  border: 3px solid var(--main-green);
 }
 
 .form-input:focus {
   box-shadow: var(--green-box-shadow);
-  border: 2px solid var(--main-green);
+}
+
+.submit-button {
+  font-size: 1.2em;
+  background-color: dodgerblue;
+  border: 5px solid black;
+  width: 70%;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  box-shadow: var(--blue-box-shadow);
 }
 
 .book-status {
