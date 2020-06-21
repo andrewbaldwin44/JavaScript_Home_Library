@@ -23,10 +23,10 @@ h1 {
 }
 
 h1, h2 {
-  font-size: 26px;
+  font-size: 28px;
   color: white;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 8px;
+  padding-left: 8px;
   text-shadow: 4px 4px 5px black;
 }
 
@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 .shelf {
-  height: 12%;
+  height: 16%;
   width: 100%;
 }
 
@@ -54,6 +54,8 @@ h1, h2 {
 }
 
 .currently-reading {
+  margin-top: 50px;
+  margin-bottom: -50px;
   width: 50%;
 }
 
@@ -62,8 +64,8 @@ h1, h2 {
 }
 
 .book {
-  max-height: 150px;
-  max-width: 100px;
+  max-height: 200px;
+  max-width: 150px;
   min-height: 150px;
   min-width: 100px;
   border-radius: 5px;
