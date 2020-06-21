@@ -62,10 +62,10 @@ h1, h2 {
 }
 
 .book {
+  max-height: 150px;
+  max-width: 100px;
   min-height: 150px;
   min-width: 100px;
-  background-color: blue;
-  border: 2px solid black;
   border-radius: 5px;
   padding: 5px;
   margin: 0 10px;
