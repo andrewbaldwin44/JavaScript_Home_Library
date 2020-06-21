@@ -1,10 +1,13 @@
+.new-book, .book-status-button {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 .new-book {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 40px;
   text-shadow: inherit;
   color: var(--main-green);
@@ -43,6 +46,11 @@
   animation-fill-mode: forwards;
 }
 
+.form, .book-status {
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
 .form {
   display: flex;
   transform: scale(0);
@@ -51,8 +59,6 @@
   height: 80%;
   width: 80%;
   color: white;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes form-in {
@@ -97,7 +103,7 @@
   line-height: 2;
 }
 
-.form-label {
+.form-label, .book-status {
   font-size: 1.4em;
 }
 
@@ -118,7 +124,53 @@
   border: 2px solid var(--main-green);
 }
 
-.close-form {
+.book-status {
+  display: flex;
+  transform: scale(0);
+  flex-direction: column;
+  color: white;
+}
+
+.book-status-label {
+
+}
+
+.book-status-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.book-status-button {
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+#book-status-yes {
+  color: var(--main-green);
+  border: 2px solid var(--main-green);
+}
+
+#book-status-yes:hover {
+  box-shadow: var(--green-box-shadow);
+}
+
+#book-status-no {
+  color: red;
+  border: 2px solid red;
+}
+
+#book-status-no:hover {
+  box-shadow: var(--red-box-shadow);
+}
+
+.close-overlay {
   position: absolute;
   top: 10px;
   right: 20px;

@@ -16,8 +16,8 @@
       <i class="far fa-plus-square"></i>
     </button>
     <div id="form-overlay" class="form-overlay">
+      <span id="close-overlay" class="close-overlay"><i class="fas fa-times"></i></span>
       <form id="form" class="form">
-        <span id="close-form" class="close-form"><i class="fas fa-times"></i></span>
         <div class="form-elements">
           <label for="book-title-input" class="form-label">Title</label>
           <input id="book-title-input" class="form-input" name="book-title-input"
@@ -43,6 +43,16 @@
           </label>
         </div>
       </form>
+      <section id="book-status" class="book-status">
+        <label for="read-confirmation" id="book-status-label"
+               class="book-status-label">
+               Have you finished reading?
+        </label>
+        <div class="book-status-buttons">
+          <button id="book-status-yes" class="book-status-button">Yes</button>
+          <button id="book-status-no" class="book-status-button">No</button>
+        </div>
+      </section>
     </div>
     <main class="bookshelf">
       <section class="currently-reading shelf">
