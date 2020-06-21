@@ -126,20 +126,48 @@
 
 .book-status {
   display: flex;
-  transform: scale(0);
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
   color: white;
+  transform: scale(0);
+}
+
+.book-status-cover,
+.book-status-button {
+  transition: box-shadow 0.3s;
+}
+
+.book-status-cover {
+  max-height: 200px;
+  max-width: 150px;
+  min-height: 300px;
+  min-width: 200px;
+  border: 4px solid var(--main-green);
+}
+
+.book-status-cover:hover {
+  box-shadow: var(--green-box-shadow);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  line-height: 1.6;
 }
 
 .book-status-label {
-
+  font-size: 24px;
 }
 
 .book-status-buttons {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .book-status-button {
