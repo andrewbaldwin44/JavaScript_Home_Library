@@ -26,16 +26,21 @@
   text-shadow: 0 0 1px var(--main-green);
 }
 
+.form-overlay, .form {
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
 .form-overlay {
   position: fixed;
-  display: flex;
-  transform: scale(0);
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
+  animation-fill-mode: forwards;
 }
 
 .form {
@@ -59,12 +64,29 @@
   }
 }
 
+@keyframes overlay-in {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: flex;
+    opacity: 1;
+  }
+}
+
 @keyframes form-out {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(0);
+  }
+}
+
+@keyframes overlay-out {
+  to {
+    opacity: 0;
   }
 }
 
