@@ -82,24 +82,7 @@ h1, h2 {
   position: relative;
 }
 
-.check-off-container {
-  position: absolute;
-  display: none;
-  color: var(--main-green);
-  background-color: white;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid black;
-  bottom: 0;
-  right: 10px;
-}
-
-.book-elements:hover .book,
-.book-elements:hover .check-off-container {
+.book-elements:hover .book {
   cursor: pointer;
   transform: scale(1.05);
-}
-
-.book-elements:hover .check-off-container {
-  display: block;
 }
