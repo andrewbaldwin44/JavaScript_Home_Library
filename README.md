@@ -1,32 +1,62 @@
-# Your Home Library
+# JavaScript OOP Home Library
 
-Create a web page to display your homeLibrary object.
+> A Library to Organize your Books Online Written for Concordia University
+
+<div align='center'>
+  <img src='./assets/images/screenshots/library.png' alt='Library Main Page' height='650px' />
+</div><br>
 
 ## Demo
 
-[View Live](https://andrewbaldwin44.github.io/Booklist/)
+[View the Live Demo](https://andrewbaldwin44.github.io/JavaScript_Home_Library/)
 
-## Goal
+## Features
 
-Someone viewing your page should
+**_View Details on a Book and Start Reading!_**
 
-- see all of the books in your library.
-- see the book that you are currently reading.
-- see that last book you finished reading, and the date
+<div align='center'>
+  <img src='./assets/images/screenshots/details.png' alt='Book Shelves' height='450px' />
+</div><br>
 
-It would definitely be a good idea to modify Book to also have an imgUrl property where you can reference an image from the web. (You could also save the image into the project in an `assets` folder.)
+**_Organize Your Books on Different Shelves_**
 
-## Setup
+<div align='center'>
+  <img src='./assets/images/screenshots/sections.png' alt='Book Shelves' height='600px' />
+</div><br>
 
-- Create the required files.
-  - `index.html`
-  - `app.js`
-  - `styles.css`
+**_Drag and Drop your Books onto Different Shelves_**
 
-## Challenge
+<div align='center'>
+  <img src='./assets/images/screenshots/drag_and_drop.gif' alt='Drag and Drop' />
+</div><br>
 
-Create a form to add books directly from the web page.
+**_Add New Books to your Library_**
 
-When you submit a book, it should be added to the books array in your homeLibrary object.
+<div align='center'>
+  <img src='./assets/images/screenshots/form.png' alt='Add Books' height='450px' />
+</div><br>
 
-_No solution provided. You're on your own!_
+## The App
+
+- Data Persistence is present throughout the app. All data will be written to local storage.
+
+## Deploy the project
+
+__Clone the repo to your local machine using the terminal__:
+```
+$ git clone git@github.com:andrewbaldwin44/JavaScript_Home_Library.git
+```
+
+*Then Open the `index.html` Project File in Your Browser*
+
+## Technologies Used
+
+- JavaScript
+- HTML
+- CSS
+
+## Authors
+
+👤 **Andrew Baldwin**
+
+- Github: [@andrewbaldwin44](https://github.com/andrewbaldwin44)
